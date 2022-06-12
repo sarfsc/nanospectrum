@@ -1,0 +1,15 @@
+# NanoSpectrum cmake configuration file
+#
+# the following variables are defined:
+#   NanoSpectrum_LIBRARIES  - list of enabled NanoSpectrum libraries
+
+# directory where the NanoSpectrum libraries are installed
+set(NanoSpectrum_LIBRARY_DIR @CMAKE_INSTALL_PREFIX@/lib)
+
+# set NanoSpectrum_LIBRARY variables
+set(NanoSpectrum_GUI_LIBRARY nanospectrum-gui)
+#set(NanoSpectrum_IO_LIBRARY nanospectrum-io)
+set(NanoSpectrum_MODEL_LIBRARY nanospectrum-model)
+
+#set(NanoSpectrum_LIBRARIES ${NanoSpectrum_GUI_LIBRARY} ${NanoSpectrum_IO_LIBRARY} ${NanoSpectrum_MODEL_LIBRARY})
+set(NanoSpectrum_LIBRARIES ${NanoSpectrum_GUI_LIBRARY} ${NanoSpectrum_MODEL_LIBRARY})
